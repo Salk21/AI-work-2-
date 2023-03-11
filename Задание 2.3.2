@@ -1,0 +1,7 @@
+# Задание 2.3.2
+
+import pandas as pd
+import numpy as np
+url = 'https://raw.githubusercontent.com/akmand/datasets/main/baseball.csv' # создаём переменную, которая содержит ссылку на данные
+dataframe = pd.read_csv(url) # открывает эту ссылку 
+dataframe.head(10) # вывести первые 10 строки фрейма
