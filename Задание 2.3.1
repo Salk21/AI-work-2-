@@ -1,0 +1,6 @@
+# Задание 2.3.1
+import pandas as pd
+import math
+s = pd.Series([(7, -11), (13, 6)], ['a', 'b']) # series - таблица с одной строкой (между точками) a и b 
+e = math.sqrt(pow(s['a'][0]-s['b'][0], 2)+pow(s['a'][1]-s['b'][1], 2)) # формула евклиидова расстояния
+print (e)
