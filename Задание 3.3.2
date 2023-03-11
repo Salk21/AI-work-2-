@@ -1,0 +1,11 @@
+# Задание 3.3.2
+
+import pandas as np
+import numpy as np
+from sklearn.preprocessing import MinMaxScaler
+scaler = MinMaxScaler()
+url = 'https://raw.githubusercontent.com/akmand/datasets/master/iris.csv' # создаём переменную, которая содержит ссылку
+dataframe = pd.read_csv(url) # открывает эту ссылку 
+dataframe[['sepal_length_cm']] = scaler.fit_transform(dataframe[['sepal_length_cm']]) # выполняет нормализацию первого числового признака с использованием минимаксного преобразования
+dataframe[['sepal_width_cm']] = preprocessing.normalize(dataframe[['sepal_width_cm']]) # выполняет нормализацию первого числового признака с задействованием z-масштабирования
+dataframe.head(5) # выводит первые 5 строк
