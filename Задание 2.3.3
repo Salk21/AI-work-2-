@@ -1,0 +1,11 @@
+# Задание 2.3.3
+
+import pandas as pd
+import numpy as np
+url = 'https://raw.githubusercontent.com/akmand/datasets/main/baseball.csv' # создаём переменную, которая содержит ссылку на данные
+dataframe = pd.read_csv(url) # открывает эту ссылку 
+dataframe.head(3) # вывести первые 3 строки фрейма 
+dataframe.tail(3) # вывести последние 3 строки фрейма
+dataframe.shape # вывести количество строк и столбцов
+dataframe.describe # вывод описательной статистики
+dataframe.iloc[1:9] # выбор несколько строк и их вывод
